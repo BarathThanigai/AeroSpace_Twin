@@ -1,4 +1,4 @@
-# AeroShield Twin - National Hackathon Project
+# AeroShield Twin
 
 **AI-Powered Cybersecurity Digital Twin for Aircraft Systems**
 

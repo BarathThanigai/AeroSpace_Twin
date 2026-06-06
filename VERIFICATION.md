@@ -265,6 +265,3 @@ Complete workflow verified:
 3. Run: `cd backend && python train_model.py && python run.py`
 4. Run: `cd frontend && npm install && npm run dev`
 5. Open: http://localhost:3000
-6. Demo to judges!
-
-✨ Ready for National Hackathon ✨
