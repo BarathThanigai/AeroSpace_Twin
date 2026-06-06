@@ -1,0 +1,77 @@
+{
+  "GPS_Spoofing": {
+    "INS_Backup": {
+      "description": "Switch to Inertial Navigation System backup",
+      "risk_reduction": 0.60,
+      "priority": 1
+    },
+    "Isolate_GPS_Feed": {
+      "description": "Disconnect GPS receiver from navigation system",
+      "risk_reduction": 0.65,
+      "priority": 1
+    },
+    "Increase_Monitoring": {
+      "description": "Increase GPS signal validation and cross-check frequency",
+      "risk_reduction": 0.35,
+      "priority": 2
+    }
+  },
+  "Sensor_Anomaly": {
+    "Sensor_Validation": {
+      "description": "Run multi-point sensor validation and calibration",
+      "risk_reduction": 0.40,
+      "priority": 1
+    },
+    "Redundant_Sensors": {
+      "description": "Switch to redundant sensor inputs",
+      "risk_reduction": 0.55,
+      "priority": 1
+    },
+    "Reduce_Data_Rate": {
+      "description": "Reduce sensor sampling frequency to filter noise",
+      "risk_reduction": 0.30,
+      "priority": 2
+    }
+  },
+  "Communication_Anomaly": {
+    "Isolate_Channel": {
+      "description": "Isolate affected communication channel",
+      "risk_reduction": 0.50,
+      "priority": 1
+    },
+    "Validate_Packets": {
+      "description": "Increase packet validation and error checking",
+      "risk_reduction": 0.40,
+      "priority": 1
+    },
+    "Switch_Frequency": {
+      "description": "Switch to alternative communication frequency",
+      "risk_reduction": 0.60,
+      "priority": 1
+    }
+  },
+  "Network_Intrusion": {
+    "Activate_Firewall": {
+      "description": "Activate network firewall and packet filtering",
+      "risk_reduction": 0.65,
+      "priority": 1
+    },
+    "Isolate_Network": {
+      "description": "Isolate affected network segment",
+      "risk_reduction": 0.70,
+      "priority": 1
+    },
+    "Reset_Connections": {
+      "description": "Reset and re-authenticate all network connections",
+      "risk_reduction": 0.50,
+      "priority": 2
+    }
+  },
+  "Unknown": {
+    "Increase_Monitoring": {
+      "description": "Increase overall system monitoring",
+      "risk_reduction": 0.25,
+      "priority": 2
+    }
+  }
+}

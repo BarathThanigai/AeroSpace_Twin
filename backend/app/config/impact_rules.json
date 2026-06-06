@@ -1,0 +1,66 @@
+{
+  "GPS_Spoofing": {
+    "affected_subsystems": ["navigation", "flight_control"],
+    "impact_on_subsystems": {
+      "navigation": 90,
+      "flight_control": 70,
+      "sensors": 20
+    },
+    "operational_consequences": {
+      "navigation_reliability": 15,
+      "autopilot_risk": "Critical",
+      "landing_capability": "Compromised",
+      "maneuvering_accuracy": 20
+    }
+  },
+  "Sensor_Anomaly": {
+    "affected_subsystems": ["sensors", "engine"],
+    "impact_on_subsystems": {
+      "sensors": 85,
+      "engine": 60,
+      "navigation": 30
+    },
+    "operational_consequences": {
+      "engine_safety": 40,
+      "performance_monitoring": 30,
+      "predictive_maintenance": "Unreliable",
+      "thrust_accuracy": 35
+    }
+  },
+  "Communication_Anomaly": {
+    "affected_subsystems": ["communication"],
+    "impact_on_subsystems": {
+      "communication": 75,
+      "flight_control": 40
+    },
+    "operational_consequences": {
+      "atc_link": "Degraded",
+      "command_response": 50,
+      "data_transmission": 45,
+      "emergency_alert": "At Risk"
+    }
+  },
+  "Network_Intrusion": {
+    "affected_subsystems": ["communication", "flight_control"],
+    "impact_on_subsystems": {
+      "communication": 80,
+      "flight_control": 75,
+      "navigation": 50
+    },
+    "operational_consequences": {
+      "system_integrity": "Compromised",
+      "command_authority": "Uncertain",
+      "all_systems": "Critical Risk",
+      "aircraft_control": "Unsafe"
+    }
+  },
+  "Unknown": {
+    "affected_subsystems": ["sensors"],
+    "impact_on_subsystems": {
+      "sensors": 40
+    },
+    "operational_consequences": {
+      "monitoring_accuracy": 50
+    }
+  }
+}

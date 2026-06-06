@@ -1,0 +1,48 @@
+{
+  "GPS_Spoofing": {
+    "affected_subsystems": ["navigation", "flight_control"],
+    "risk_multiplier": 2.5,
+    "confidence_threshold": 0.75,
+    "rules": {
+      "gps_signal_drop": {"weight": 0.4, "threshold": 40},
+      "position_jump": {"weight": 0.3, "threshold": 500},
+      "erratic_heading": {"weight": 0.3, "threshold": 45}
+    }
+  },
+  "Sensor_Anomaly": {
+    "affected_subsystems": ["sensors", "engine"],
+    "risk_multiplier": 1.8,
+    "confidence_threshold": 0.65,
+    "rules": {
+      "temp_spike": {"weight": 0.4, "threshold": 100},
+      "pressure_deviation": {"weight": 0.3, "threshold": 30},
+      "vibration_anomaly": {"weight": 0.3, "threshold": 0.8}
+    }
+  },
+  "Communication_Anomaly": {
+    "affected_subsystems": ["communication"],
+    "risk_multiplier": 1.5,
+    "confidence_threshold": 0.6,
+    "rules": {
+      "packet_loss_spike": {"weight": 0.4, "threshold": 20},
+      "latency_surge": {"weight": 0.35, "threshold": 500},
+      "signal_dropout": {"weight": 0.25, "threshold": 3}
+    }
+  },
+  "Network_Intrusion": {
+    "affected_subsystems": ["communication", "flight_control"],
+    "risk_multiplier": 2.2,
+    "confidence_threshold": 0.7,
+    "rules": {
+      "unusual_traffic": {"weight": 0.4, "threshold": 1000},
+      "protocol_violation": {"weight": 0.35, "threshold": 5},
+      "unauthorized_access": {"weight": 0.25, "threshold": 10}
+    }
+  },
+  "Unknown": {
+    "affected_subsystems": ["sensors"],
+    "risk_multiplier": 1.2,
+    "confidence_threshold": 0.5,
+    "rules": {}
+  }
+}
