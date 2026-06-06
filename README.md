@@ -221,5 +221,3 @@ npm run dev
 **API Documentation**: `http://localhost:8000/docs`
 
 ---
-
-**AeroShield Twin v1.0.0** - Built for National Hackathon 🚀
